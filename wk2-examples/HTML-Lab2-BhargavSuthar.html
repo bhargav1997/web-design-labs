@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lab 2</title>
+</head>
+
+<body>
+    <header id="header">
+        <h2 id="site-name">
+            <a href="/">Fake Store</a>
+        </h2>
+        <nav id="cart-navigation" aria-label="Cart navigation">
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+
+        <nav id="main-navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Section Start -->
+    <main id="main">
+        <h1>Checkout Order #712 - Billing and Payment</h1>
+        <p>Order Total: $777</p>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Billing Information</legend>
+                <div>
+                    <label for="firstname">Firstname:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Bhau">
+
+                    <label for="lastName">LastName:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Suthar">
+                </div>
+
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="123 Fake street">
+                </div>
+
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Toronto">
+
+                    <label for="province">Province:</label>
+                    <select id="province" name="province">
+                        <option selected disabled value="">-- Choose Province --</option>
+                        <option value="NB">
+                            New Brunswick
+                        </option>
+                        <option value="ON">
+                            Ontario
+                        </option>
+                        <option value="QC">
+                            Quebec
+                        </option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <fieldset>
+                    <legend>Choose Card</legend>
+                    <div>
+                        <input type="radio" id="mastercard" name="card" value="MasterCard" checked>
+                        <label for="mastercard">MasterCard</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="visa" name="card" value="Visa">
+                        <label for="visa">Visa</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="cardNumber">Card Number: </label>
+                    <input type="number" id="cardNumber" name="cardNumber" placeholder="1234 1234 1234 1234"
+                        inputmode="numeric">
+                </div>
+
+                <div>
+                    <label for="cardExpiry">Card Expiry: </label>
+                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" inputmode="numeric">
+                </div>
+            </fieldset>
+            <button type="submit">Pay now</button>
+        </form>
+    </main>
+    <!-- Main Section End -->
+    <footer id="footer">
+        © Copyright HTTP5121, 2024.
+    </footer>
+</body>
+
+</html>

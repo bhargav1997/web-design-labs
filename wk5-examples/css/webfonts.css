@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&family=Young+Serif&display=swap');
+/********************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES
+ * 2. LAYOUT
+ * 3. FONT STUFF
+ ********************************************************************/
+ 
+/* 1. GENERAL STYLES */
+body {
+  margin:0; /* remove gap all around page edges */
+}
+
+/* 2. LAYOUT */
+#header, #footer {
+  background-color:#000;
+  padding:1em 2em;
+  color:#fff;
+}
+
+/* 3. FONT STUFF */
+body {
+  font-family:"Raleway",sans-serif;
+  font-weight:300;
+}
+h1, h2, h3 {
+  font-family:"Young Serif",serif;
+}

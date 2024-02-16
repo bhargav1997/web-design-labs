@@ -1,0 +1,32 @@
+nav ul {
+  padding: 0;
+  list-style: none;
+  border: 1px solid black;
+}
+.inline-menu {
+  display: flex;
+  column-gap: 5em;
+}
+.inline-menu li {
+   position: relative;
+   /* padding: 1em; */
+   border: 1px solid red;
+}
+
+.inline-menu a {
+   text-decoration: none;
+}
+
+.inline-menu ul {
+width: 150px;
+    position: absolute;
+  left: -1000px;
+}
+.inline-menu li:hover > ul {
+  left: 0;
+}
+
+.inline-menu ul li:hover > ul {
+    left: 100%;
+    top: 0;
+}

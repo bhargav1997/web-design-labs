@@ -1,0 +1,80 @@
+.flex-container-row,
+.flex-container-column,
+.flex-item {
+  border:1px solid #000;
+}
+.flex-container-row, .flex-container-column {
+  background-color:#c498ff; /* so flex container is easily visible */
+}
+
+.flex-container-row {
+  padding:1em;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap; 
+  flex-flow: row wrap; /* supported in older version */
+  justify-content:space-between; /* main  axis (row/column based)*/
+  align-items:center; /*  Cross Axis (column/row) */
+  gap:20px; 
+  /*
+  <Row-Gap> <Col-gap>
+   row-gap:px/em
+   column-gap: px/em
+  */
+}
+.flex-item {
+  background-color:#fdd489; /* so flex item is easily visible */
+  flex-grow:1;
+  flex-shrink:1;
+  flex-basis:0;
+  /* auto/length(%/px)  */
+ /* flex-basis: 150px; */
+ flex: 1 1 0;
+ /* <flex-grow> <flex-shrink> <flex-basis> */
+}
+
+.flex-item:nth-child(3) {
+  order:1;
+  /* flex-grow: 2; */
+  /* flex: 3 1 0; */
+}
+
+/* Layout Example */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(212, 181, 181);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  /* gap: 2em; */
+  column-gap: 3em;
+}
+
+#header,.page-content > * {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.page-content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+#main {
+  flex: 2 1 0; /* <flex-grow> <flex-shrink> <flex-basis> */
+}
+
+#sidebar-one, #sidebar-two {
+  flex: 1 1 0;
+}
+
+#sidebar-one {
+  order: -1;  /* it makes first */
+
+}

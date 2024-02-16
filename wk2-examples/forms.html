@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <h1>HTML Forms</h1>
+  <!-- All stuff that belongs to forms - including submit buttons - go inside a FORM element. -->
+  <!-- 
+      There is a method attribute (GET by default). This sets how form
+      data will be submitted.
+      
+      - "get": GET forms (the default if the method attribute is not set) submit the data 
+               via the URL. This is usually used for simple search
+               forms where it doesn't matter if the data is visible in the URL. Searches are
+               not secure data so this doesn't matter. It's also useful to be able to bookmark
+               a search page. Since GET forms pass data via the URL, there is a character limit on
+               GET form data.
+      - "post": POST forms do NOT submit via the URL, so this is inherently more secure (i.e. the
+                data is not immediately exposed). Most forms should use POST as the submission
+                method. Wherever there is more sensitive data, use POST (e.g. a login form or 
+                checkout form).
+    -->
+  <!--
+      There is an action attribute. This value is the destination (URI/URL) where the form data
+      will be submitted to. As we're not doing any server-side form processing in this class, you
+      can omit this attribute for this class, but it's important to know about this attribute.
+    -->
+  <h2>Search form example</h2>
+  <form method="get" action="#">
+    <label for="q">Search:</label>
+    <input type="text" id="q" name="query" placeholder="E.G: Arctic fox" />
+    <!-- <input type="submit" value="Search"> -->
+    <button type="submit">Search</button>
+  </form>
+
+  <h2>Login form example</h2>
+
+  <form method="post" action="#">
+    <div>
+      <label for="user">Username:</label>
+      <input type="text" id="user" name="user" placeholder="Bhau712" />
+    </div>
+    <div>
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="password" placeholder="Your Psd" />
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  <h2>Random form example</h2>
+  <p>The following is just a form used to test out a few form fields.</p>
+<form>
+  <div>
+    <label for="family">Number of people in your household:</label>
+    <input type="number" id="family" name="familyMember" placeholder="1" min="1" max="10" />
+  </div>
+
+  <div>
+    <label for="phonenumber">Phone Number:</label>
+    <input type="tel" id="phonenumber" name="phonenumber" placeholder="777-77-77" pattern="" />
+
+    <input type="text" id="test" name="test" placeholder="22" inputmode="numeric" />
+    <!-- Handle Numbers -->
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="familyMember" placeholder="sj@gm.com" />
+  </div>
+
+
+  <!-- if u need to passdata but not have it visible-->
+  <input type="hidden" value="My SecretData" id="hidden-field" />
+
+  <div>
+    <input type="color" id="color" name="color" />
+  </div>
+  <div>
+    <input type="date" id="date" name="date" />
+  </div>
+  <div>
+    <input type="file" id="file" name="file" />
+  </div>
+  <div>
+    <input type="range" id="range" name="range" />
+  </div>
+  <div>
+    <input type="url" id="website" name="website" placeholder="http://example.com" required />
+  </div>
+
+  <!--
+    Checkbox and radio should have the same name value so that hey register as a group
+  -->
+  <div>
+    <input type="radio" id="male" name="gender" value="Male" />
+    <label for="male">Male</label>
+
+    <input type="radio" id="female-gender" name="gender" value="Female" />
+    <label for="female-gender">Female</label>
+  </div>
+
+  <!--
+    Grouping related things in larger forms
+  -->
+  <fieldset>
+    <legend>What is your age group?</legend>
+    <input type="radio" id="tens" name="age" value="10s" />
+    <label for="tens">10-19</label>
+    <input type="radio" id="twenties" name="age" value="20s" checked />
+    <label for="twenties">20-29</label>
+  </fieldset>
+
+  <div>
+    <input type="checkbox" id="subscribe" name="subscribe" value="subscribed" />
+    <label for="subscribe">Subscribe to our newsletter.</label>
+  </div>
+
+  <div>
+    <label for="reason"> Reason for inquiry:</label>
+    <select id="reason" name="reason">
+      <option selected disabled value="">-- Choose a reason --</option>
+      <option value="sales">
+        Sales inquiry
+      </option>
+      <optgroup label="other"> <!-- using for organizing options into groups-->
+        <option value="general">
+          General inquiry
+        </option>
+        <option value="legal">
+          Legal inquiry
+        </option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="message" placeholder="Your Message text here.."></textarea>
+  </div>
+
+  <button type="submit">Submit</button>
+  <button type="button">Generic Button</button>
+  <button type="reset">Clear form</button>
+</form>
+</body>
+
+</html>
