@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blogger : Mr. Bhargav Suthar</title>
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <h2 id="site-name">
+            <a href="#">
+                Bhargav's Tech Blog
+            </a>
+        </h2>
+        <nav id="main-navigation">
+            <ul id="left-menu" class="navigation-list">
+                <!-- Main Menu Items (Left Side) -->
+                <li>
+                    <span class="fa-solid fa-house"></span>
+                    <a href="#" class="navigation-link">Home</a>
+                </li>
+                <li>
+                    <a href="#related-topics" class="navigation-link">Topics</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#recent" class="navigation-link">Recent Post</a>
+                </li>
+                <li>
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <a href="#footer" class="navigation-link">About Me</a>
+                </li>
+            </ul>
+
+            <!-- Main Menu Items (Right Side) -->
+            <ul id="right-menu" class="navigation-list">
+                <li>
+                    <span class="fa fa-sign-in" aria-hidden="true"></span>
+                    <a href="#" class="navigation-link">Login</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navigation-link">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <div class="blog-body-container">
+            <article>
+                <section id="main-article-section">
+                    <h2>The Future of Artificial Intelligence</h2>
+
+                    <p>
+                        Artificial Intelligence Revolution: A Glimpse into the Future
+
+                        In a world rapidly evolving with technology, the future holds immense promise, especially with
+                        the continuous advancements in Artificial Intelligence (AI). Let's delve into the transformative
+                        landscape that AI is paving and discover the incredible potential it unlocks.
+                    </p>
+                    <p>
+                        Breaking Barriers: AI's Impact on Industries
+                        Industries across the globe are witnessing a paradigm shift, thanks to the integration of
+                        Artificial Intelligence. From healthcare to finance, AI is breaking traditional barriers,
+                        streamlining processes, and enhancing efficiency. Explore how AI is revolutionizing diverse
+                        sectors and propelling them into the future.
+
+                    </p>
+
+                    <!--
+                        Owner: Joshua Sortino
+                        Credit: https://unsplash.com/photos/worms-eye-view-photography-of-ceiling-LqKhnDzSF-8
+                    -->
+                    <img src="images/ai_future_image.jpeg" alt="AI Future" class="article-image">
+
+                    <p>
+                        Smart Homes, Smarter Living: AI in Everyday Life
+                        The concept of smart homes is no longer confined to science fiction. AI is making its way into
+                        our daily lives, orchestrating seamless interactions between devices. Discover how AI-driven
+                        technologies are creating smarter living environments, offering convenience, security, and
+                        energy efficiency.
+                    </p>
+
+                    <p>
+                        The Rise of AI in Business: A Competitive Edge
+                        Businesses are recognizing the competitive edge that AI brings to the table. From data analysis
+                        to customer interactions, AI is reshaping the business landscape. Uncover the ways in which AI
+                        is enhancing decision-making processes and fostering innovation across various industries.
+                    </p>
+
+                    <!--
+                        Owner: Steve Johnson
+                        Credit: https://unsplash.com/photos/a-persons-head-with-a-circuit-board-in-front-of-it-WhAQMsdRKMI
+                    -->
+                    <img src="images/ai_future_2.jpeg" alt="AI Future" class="article-image">
+
+                    <p class="article-meta">
+                        Published on January 29, 2024 by Bhargav Suthar
+                    </p>
+
+                    <!-- Like and Comment Buttons -->
+                    <button class="like-button">
+                        <i class="fas fa-thumbs-up"></i>
+                    </button>
+                    <button class="comment-button">
+                        <i class="fas fa-comment"></i>
+                    </button>
+                </section>
+
+                <section id="comment-box">
+                    <div class="comment-box">
+                        <h2 class="comment-title">Post a Comment</h2>
+                        <form id="comment-form">
+                            <div class="form-group">
+                                <label for="userName">Full name:</label> <input id="userName" type="text" name="fname"
+                                    placeholder="bhargav1997" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail">Email:</label> <input id="userEmail" type="email" name="email"
+                                    placeholder="bhau@gmail.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="userComment" rows="4" cols="50" name="comment"
+                                    placeholder="Enter your comment here..." required></textarea>
+                            </div>
+
+                            <input type="button" onclick="submitComment()" value="Submit" class="btn-submit">
+                        </form>
+                        <div class="recent-comment-box">
+                            <h3 class="recent-comment-title">Most Recent Comments:</h3>
+                            <span class="comment-separator"></span>
+                            <p id="comments">Sorry, No Comments to display.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+            </article>
+
+            <!-- Side Section Start -->
+            <aside id="aside">
+                <section id="related-topics">
+                    <h2 class="block-heading">Related Topics</h2>
+                    <div class="hashtag-box">
+                        <a href="#" class="hashtag">#Technology</a>
+                        <a href="#" class="hashtag">#Programming</a>
+                        <a href="#" class="hashtag">#WebDevelopment</a>
+                        <a href="#" class="hashtag">#SoftwareEngineering</a>
+                    </div>
+                </section>
+
+                <section id="local">
+                    <h2 class="block-heading">Tech Local News</h2>
+                    <ul>
+                        <li>
+                            <div class="news-item">
+                                <a href="#" class="news-title">Tech Startup Opens New Office in Local Business District</a>
+                                <p class="news-text">
+                                    Exciting news for the local business district as a dynamic tech startup unveils its new office space. 
+                                    With a focus on innovation and collaboration, the startup aims to invigorate the area with fresh ideas and opportunities. 
+                                    This expansion not only signals the company's growth but also brings a wave of energy to the community, 
+                                    fostering new connections and driving economic development. Welcome to the neighborhood!
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="news-item">
+                                <a href="#" class="news-title">Local High School Students Win Coding Competition</a>
+                                <p class="news-text">
+                                    Celebrations abound as local high school students emerge victorious in a coding competition. 
+                                    Displaying exceptional talent and dedication, these young coders showcased their skills in a fiercely competitive arena. 
+                                    Their success not only highlights the potential of youth in the field of technology but also serves as inspiration for future generations. 
+                                    With their innovative solutions and teamwork, these students have proven that the future of tech is in capable hands. 
+                                    Congratulations to the winners on their well-deserved triumph!
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button id="read-more">Read More</button>
+                </section>
+
+                <section id="weather">
+                    <h2 class="block-heading">Today's weather </h2>
+               
+                    <p> -12 deg Celsius | Cloudy </p>
+                 
+                </section>
+
+                <section class="recent-post" id="recent">
+                    <h2 class="recent-post-title block-heading">
+                        Recent posts
+                    </h2>
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="recent-post-card">
+                                <div class="card-content">
+                                    <h3 class="headline headline-3 card-title">
+                                        <a href="#" class="hashtag-heading">Exploring the Future of Artificial
+                                            Intelligence</a>
+                                    </h3>
+                                    <p class="post-date">February 5, 2024</p>
+                                    <p class="card-text">
+                                        Discover the latest advancements and trends in AI technology and its impact on
+                                        various industries.
+                                    </p>
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="#" class="hashtag">#Tech</a>
+                                            <a href="#" class="hashtag">#ArtificialIntelligence</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="recent-post-card">
+                                <div class="card-content">
+                                    <h3 class="headline headline-3 card-title">
+                                        <a href="#" class="hashtag-heading">The Rise of Quantum Computing</a>
+                                    </h3>
+                                    <p class="post-date">February 1, 2024</p>
+                                    <p class="card-text">
+                                        Explore the revolutionary developments in the field of quantum computing and its
+                                        potential applications.
+                                    </p>
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="#" class="hashtag">#Tech</a>
+                                            <a href="#" class="hashtag">#QuantumComputing</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="recent-post-card">
+                                <div class="card-content">
+                                    <h3 class="headline headline-3 card-title">
+                                        <a href="#" class="hashtag-heading">The Impact of 5G on the Future of
+                                            Connectivity</a>
+                                    </h3>
+                                    <p class="post-date">January 31, 2024</p>
+                                    <p class="card-text">
+                                        Dive into the transformative effects of 5G technology and its implications for
+                                        the way we connect and communicate.
+                                    </p>
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="#" class="hashtag">#Tech</a>
+                                            <a href="#" class="hashtag">#5G</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="recent-post-card">
+                                <div class="card-content">
+                                    <h3 class="headline headline-3 card-title">
+                                        <a href="#" class="hashtag-heading">The Evolution of Augmented Reality in
+                                            Tech</a>
+                                    </h3>
+                                    <p class="post-date">January 21, 2024</p>
+                                    <p class="card-text">
+                                        Explore the journey of augmented reality and how it continues to shape the
+                                        landscape of modern technology.
+                                    </p>
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="#" class="hashtag">#Tech</a>
+                                            <a href="#" class="hashtag">#AugmentedReality</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+            </aside>
+            <!-- Side Section End -->
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h4 class="footer-list-title">About Me</h4>
+                    <p class="footer-text">
+                        As a passionate software engineer, I take pride in my role not only as a tech professional
+                        but also as an enthusiastic educator. With a commitment to sharing knowledge, I actively
+                        take initiatives to teach technology. My aim is to empower others with the skills and
+                        insights needed to navigate the dynamic world of software engineering. Through engaging and
+                        informative lessons, I strive to inspire and guide individuals on their journey to mastering
+                        the art of technology.
+                    </p>
+
+                    <h4 class="footer-list-title">Address</h4>
+                    <address class="footer-text address">
+                        28 Evangeline Ct, Etobicoke, ON M9V 4V2
+                    </address>
+                    <p class="footer-text">+1 (647)-261-0782</p>
+                </div>
+
+                <div class="footer-list">
+                    <h4 class="footer-list-title">Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-link hover-2">Programming</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link hover-2">Web Development</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link hover-2">Artificial Intelligence</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link hover-2">Mobile App Development</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link hover-2">Cybersecurity</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link hover-2">Blockchain</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+                    <h4 class="footer-list-title">Newsletter</h4>
+
+                    <p class="footer-text">
+                        Sign up to be first to receive the latest stories inspiring us, case studies, and industry
+                        news.
+                    </p>
+
+                    <div class="input-wrapper">
+                        <label for="userName">Your name:</label> <input type="text" name="name" placeholder="Your name"
+                            required class="input-field" autocomplete="off">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="userName">Email:</label>
+                        <input type="email" name="email_address" placeholder="Emaill address" required
+                            class="input-field" autocomplete="off">
+                    </div>
+
+                    <a href="#" class="button subscribe-button">
+                        Subscribe
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    <a href="#" class="copyright-link"> &copy; Developed by Bhargav Suthar all rights reserved</a>
+                </p>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="https://github.com/bhargav1997" class="social-link" target="_blank">
+                            Github
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/bhargav-suthar/" class="social-link" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/bhargav_3_suthar/" class="social-link" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="additional-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
