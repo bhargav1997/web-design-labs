@@ -1,0 +1,245 @@
+body {
+    font-family: normal 1em/1.25 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+li { list-style: none; }
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a, a:link {
+    color: rgb(255, 137, 137);
+}
+
+a:visited {
+    color: #555;
+}
+
+a:hover {
+    color: #2b1046;
+}
+
+/*
+:active is when mouse button held down but before being released
+*/
+a:active {
+    color: red;
+}
+
+a.button, button {
+     background-color: #69488a;
+     color: #fff;
+     text-decoration: none;
+     padding: 0.5em 0.8em;
+     border: none;
+     display: inline-block;
+     font-family: inherit;
+     font-size: 1em;
+     margin: 0.3em;
+     border-radius: 0.5em;
+}
+
+
+.button.large,
+button.large
+{
+    font-size: 1.4em;
+}
+
+#header a
+{
+    color: #fff;
+    text-decoration: none; /* Remove any underline */
+}
+
+#main-navigation {
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+#main-navigation a {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#main-navigation ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#main-navigation li {
+    display: inline-block;
+    margin-right: 3em; 
+}
+
+#main-navigatioon li:last-child {
+    margin-right: 0; 
+}
+
+#header {
+    background-color:  rgb(248, 156, 156);
+    padding: 1em 2em; /* 1em 2em */
+    border-bottom: 5px solid #2b1046;
+}
+
+#site-name {
+   font-size: 2em;
+   /* Adjusting text curning */
+   letter-spacing: 10px;
+   margin: 0;
+}
+
+.blog-body-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-body-container article {
+    width: 80%;
+    padding: 2em;
+}
+
+.blog-body-container aside {
+    width: 20%;
+    padding: 2em;
+}
+
+
+/* #site-name::before {
+    content: "{"
+}
+
+#site-name::after {
+    content: "}"
+} */
+
+h1 {
+   font-size: 3em; 
+}
+
+#main h2 {
+   font-style: italic;
+}
+
+#sidebar {
+    font-size: 0.9em;
+}
+
+.block-heading {
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: rgb(248, 156, 156);
+    color: #fff;
+    padding: 0.5em 0.8em; 
+}
+
+#footer {
+    background-color:  rgb(248, 156, 156);
+    padding: 1em 2em; /* 1em 2em */
+    /*border: <brd-width> <brd-style> <brd-color> */
+    border-top: 5px solid #2b1046;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.social-list li {
+    padding: 0.3em 1em;
+    margin: 1em;
+    background: #2b1046;
+    border-radius: 1em;
+}
+
+.social-list li a {
+    color: #fff;
+}
+
+.copyright {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 1.3em;
+}
+
+#comment-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comment-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .comment-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group textarea:focus {
+    background-color: #fff;
+  }
+  
+  .btn-submit {
+    background-color: #69488a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #003366;
+  }

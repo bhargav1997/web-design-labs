@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blogger : Mr. Bhargav Suthar</title>
+
+    <!-- Link External CSS -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header id="header">
+        <h2 id="site-name">
+            <a href="#">
+                Bhargav's Tech Blog
+            </a>
+        </h2>
+        <nav id="main-navigation">
+            <ul id="navigation-list">
+                <li>
+                    <a href="#" class="navigation-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#topics" class="navigation-link">Topics</a>
+                </li>
+
+                <li>
+                    <a href="#recent" class="navigation-link">Recent Post</a>
+                </li>
+
+                <li>
+                    <a href="#footer" class="navigation-link">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="main">
+        <div class="blog-body-container">
+
+            <article>
+                <section id="main-article-section">
+                    <h2>Blog Title</h2>
+
+                    <p>
+                        I use animation as a third dimension by which to simplify experiences and kuiding thro each
+                        and every
+                        interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
+                    </p>
+                </section>
+
+                <section class="recent-post" id="recent">
+                    <h2 class="recent-post-title">
+                        Recent posts
+                    </h2>
+
+                    <p class="section-text">
+                        Don't miss the latest trends
+                    </p>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="recent-post-card">
+                                <div class="card-content">
+
+                                    <h3 class="headline headline-3 card-title">
+                                        <a href="#" class="hashtag">Helpful Tips for Working from Home as a
+                                            Freelancer</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Gosh jaguar ostrich quail one excited dear hello and bound and the and bland
+                                        moral misheard
+                                        roadrunner flapped lynx far that and jeepers giggled far and far
+                                    </p>
+
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="#" class="hashtag"># Travel</a>
+                                            <a href="#" class="hashtag"># Lifestyle</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="recent-post-card">
+                                <div class="card-content">
+                                    <h3 class="headline headline-3 card-title">
+                                        <a href="#" class="hashtag">Helpful Tips for Working from Home as a
+                                            Freelancer</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Gosh jaguar ostrich quail one excited dear hello and bound and the and bland
+                                        moral misheard
+                                        roadrunner flapped lynx far that and jeepers giggled far and far
+                                    </p>
+
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="#" class="hashtag">#Travel</a>
+
+                                            <a href="#" class="hashtag">#Lifestyle</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+
+            <!-- Side Section Start -->
+            <aside id="aside">
+                <section id="local">
+                    <h2 class="block-heading">Local News</h2>
+                    <ul>
+                        <li><a href="#">Article 1</a></li>
+                        <li><a href="#">Article 2</a></li>
+                    </ul>
+                    <button id="read-more">Read More </button>
+                </section>
+
+                <section id="weather">
+                    <h2 class="block-heading">Today's weather </h2>
+                    <p>-12 deg Celcius | Cloudy </p>
+                </section>
+            </aside>
+        </div>
+        <!-- Side Section End -->
+
+        <section id="comment-box">
+            <div class="comment-box">
+                <h3 class="comment-title">Post a Comment</h3>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label for="userName">Full name:</label> <input id="userName" type="text" name="fname" placeholder="User name">
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email :</label> <input id="userEmail" type="text" name="email" placeholder="email">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="userComment" rows="4" cols="50" name="comment" placeholder="Enter your comment here..."> </textarea>
+                    </div>
+
+                    <input type="button" onclick="submitComment()" value="Submit" class="btn-submit">
+                </form>
+                <h3>Most Recent Comments:</h3>
+                <p id="comments">Sorry, No Comments to display.</p>
+            </div>
+        </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <p class="footer-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem esse enim laborum omnis labore
+                            cupiditate cum aspernatur nisi laboriosam, maiores minus, ipsum voluptatem perferendis in
+                            eligendi tempora, natus consequatur voluptates!
+                        </p>
+
+                        <h4 class="footer-list-title">Address</h4>
+                        <address class="footer-text address">
+                            28 Evangeline Ct, Etobicoke, ON M9V 4V2
+                        </address>
+                    </div>
+
+                    <div class="footer-list">
+                        <h4 class="footer-list-title">Categories</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="footer-link hover-2">Action</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Business</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Adventure</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Canada</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">America</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-list">
+                        <h4 class="footer-list-title">Newsletter</h4>
+
+                        <p class="footer-text">
+                            Sign up to be first to receive the latest stories inspiring us, case studies, and industry
+                            news.
+                        </p>
+
+                        <div class="input-wrapper">
+                            <label for="userName">Your name:</label> <input type="text" name="name"
+                                placeholder="Your name" required class="input-field" autocomplete="off">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="userName">Email:</label>
+                            <input type="email" name="email_address" placeholder="Emaill address" required
+                                class="input-field" autocomplete="off">
+                        </div>
+
+                        <a href="#" class="button subscribe-button">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        &copy; Developed by <a href="#" class="copyright-link">Bhargav Suthar</a>
+                    </p>
+
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                Github
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                LinkedIn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                Instagram
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
